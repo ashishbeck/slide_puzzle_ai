@@ -3,7 +3,7 @@ This project is a modified version of Michael Schrandt's [original work](https:/
 
 In order to use this, upload the entire contents onto a new Cloud Run instance and deploy it as per the official [documentation](https://codelabs.developers.google.com/codelabs/cloud-run-hello-python3). Once deployed, grab the app URL and append the tile sequence in the end as such:
 
-`htpps://yoururl.run.app/?tiles=1 2 3 0 4 6 7 5 8`
+`https://yoururl.run.app/?tiles=1 2 3 0 4 6 7 5 8`
 
 It will return a string like `Left, Down, Up, Left` which you can parse into your own app as per your needs.
 
