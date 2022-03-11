@@ -1,7 +1,11 @@
 # NPuzzle Solver for Retro Slide Puzzle
 This project is a modified version of Michael Schrandt's [original work](https://github.com/mschrandt/NPuzzle) to allow my [game](https://github.com/ashishbeck/slide_puzzle) to run a solver. I have made changes so that it can run on Google Cloud Run and it takes input from the HTTP request. It returns a list of string which dictate how my game will perform the required steps.
 
-In order to use this, upload the entire contents onto a new Cloud Run instance and deploy it as per the official [documentation](https://codelabs.developers.google.com/codelabs/cloud-run-hello-python3).
+In order to use this, upload the entire contents onto a new Cloud Run instance and deploy it as per the official [documentation](https://codelabs.developers.google.com/codelabs/cloud-run-hello-python3). Once deployed, grab the app URL and append the tile sequence in the end as such:
+
+`htpps://yoururl.run.app/?tiles=1 2 3 0 4 6 7 5 8`
+
+It will return a string like `Left, Down, Up, Left` which you can parse into your own app as per your needs.
 
 ## Original README below
 
